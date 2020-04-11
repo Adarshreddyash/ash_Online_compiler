@@ -1,4 +1,4 @@
-# js-online
+# ash_online_compiler
 
 ## Project setup
 ```
