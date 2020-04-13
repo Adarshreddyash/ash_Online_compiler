@@ -10,7 +10,7 @@
       <v-btn @click="addContent()" class="ma-2" tile color="indigo" white>➤ Run</v-btn>
     <v-btn href="mailto:adarshreddy9849@gmail.com" text small style="color:#ccffff;">report</v-btn>
     </v-toolbar>
-
+<v-container>
   <v-layout row>
     <v-flex md6 xs6>
        <m-ace-editor height="300px" v-model="htmlCode" :line-number="True" mode="html" theme="monokai"></m-ace-editor> 
@@ -24,7 +24,8 @@
     <v-flex md6 xs6>
     <iframe id="finalIframe" width="100%" height="100%"> </iframe>
     </v-flex>
-  </v-layout> 
+  </v-layout>
+   </v-container>
         
     <!--<img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />-->
