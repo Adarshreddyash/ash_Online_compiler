@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    
-       <v-btn @click="addContent()" class="ma-2" tile color="indigo" dark>➤ Run</v-btn>
-   
-        <p>html</p>
-          <m-ace-editor height="50px" v-model="htmlCode" :line-number="True" mode="html"  class="purple darken-2" theme="monokai"></m-ace-editor>
-          <p>CSS</p>
-          <m-ace-editor height="50px" v-model="cssCode" :line-number="True" mode="css"  class="purple darken-2" theme="monokai"></m-ace-editor>
-          <p>JS</p>
-          <m-ace-editor height="50px" v-model="jsCode" :line-number="True" mode="javascript"  class="purple darken-2" theme="monokai"></m-ace-editor>
-        <b-col> <iframe id="finalIframe" width="100%" height="100%"> </iframe></b-col>
+  <v-btn @click="addContent()" class="ma-2" tile color="indigo" dark>➤ Run</v-btn>
+
+  <v-layout row>
+    <v-flex md6 xs6>
+       <m-ace-editor height="300px" v-model="htmlCode" :line-number="True" mode="html" theme="monokai"></m-ace-editor> 
+    </v-flex>
+    <v-flex md6 xs6>
+       <m-ace-editor height="300px" v-model="cssCode" :line-number="True" mode="css" theme="monokai"></m-ace-editor>
+    </v-flex>
+    <v-flex md6 xs6>
+      <m-ace-editor height="300px" v-model="jsCode" :line-number="True" mode="javascript" theme="monokai"></m-ace-editor>
+    </v-flex>
+    <v-flex md6 xs6>
+    <iframe id="finalIframe" width="100%" height="100%"> </iframe>
+    </v-flex>
+  </v-layout> 
+        
     <!--<img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />-->
-    <div class="js-online-wrapper">
-      <div class="editor-wrapper"></div>
-      <div class="editor-wrapper"></div>
-    </div>
-    <div></div>
-    <div id="logger"></div>
+    
   </div>
 </template>
 
@@ -74,8 +76,7 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #d9dde2;
+  color: #000000;
   background-color: #f0f2f5;
 }
 </style>
