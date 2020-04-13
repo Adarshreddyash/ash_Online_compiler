@@ -1,6 +1,15 @@
 <template>
   <div id="app">
-  <v-btn @click="addContent()" class="ma-2" tile color="indigo" dark>➤ Run</v-btn>
+      <v-toolbar dense dark>
+      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+
+      <v-toolbar-title>ash - Online html css js compiler</v-toolbar-title>
+
+      <v-spacer></v-spacer>
+
+      <v-btn @click="addContent()" class="ma-2" tile color="indigo" white>➤ Run</v-btn>
+    <v-btn href="mailto:adarshreddy9849@gmail.com" text small style="color:#ccffff;">report</v-btn>
+    </v-toolbar>
 
   <v-layout row>
     <v-flex md6 xs6>
@@ -77,6 +86,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #000000;
-  background-color: #f0f2f5;
+  background-color: #00060f;
 }
 </style>
